@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<img src="{{ noutbuk.image_n.url }}"><br>
+    <h3>{{ noutbuk.name_n }}</h3><br>
+    {{ noutbuk.make_n }}<br>
+    {{ noutbuk.year_n }}<br>
+    {{ noutbuk.price_n }}<br>
+<h2><a href="{% url 'list-noutbuk' %}"><--ORTGA</a></h2>
+
+{% endblock content %}

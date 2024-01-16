@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<h1>NOUTBUKLAR</h1>
+{% for noutbuk in noutbuks %}
+    <img src="{{ noutbuk.image_n.url }}"><br>
+    <h2><a href="{% url 'detail-noutbuk' noutbuk.pk %}"> {{ noutbuk.name_n }} </a> </h2>
+
+{% endfor %}
+
+
+{% endblock content %}
